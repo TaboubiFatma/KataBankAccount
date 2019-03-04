@@ -1,0 +1,70 @@
+  
+<div class="wrapper">
+    <div class="sidebar" data-background-color="white" data-active-color="danger">
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="https://www.societegenerale.com/fr/accueil" class="simple-text">
+                     <img src="assets/img/favicon.jpg" alt="..." style="height:80%;width:80%;"/>
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <a  [routerLink]="['/withdraw']">
+                        <i class="ti-credit-card"></i>
+                        <p>Withdraw</p>
+                    </a>
+                </li>
+                <li>
+                    <a  [routerLink]="['/deposit']">
+                        <i class="ti-credit-card"></i>
+                        <p>Deposit</p>
+                    </a>
+
+                </li>
+                <li>
+                    <a [routerLink]="['/operations']">
+                        <i class="ti-import"></i>
+                        <p>history of operations</p>
+                    </a>
+                </li>
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Home</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-bell"></i>
+                                    <p class="notification">5</p>
+									<p>Notifications</p>
+									<b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Notification 1</a></li>
+                                <li><a href="#">Notification 2</a></li>
+                                <li><a href="#">Notification 3</a></li>
+                                <li><a href="#">Notification 4</a></li>
+                                <li><a href="#">Another notification</a></li>
+                              </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+         <router-outlet></router-outlet>
+     </div>

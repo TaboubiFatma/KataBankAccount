@@ -1,0 +1,29 @@
+<div class="content" style="margin-top: 30px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Withdraw amount</h4>
+                    </div>
+                    <div class="content table-responsive table-full-width" style="margin-left:30px;">
+					    <div class="row">
+                            <div class="col-md-4">
+							   <label for="accountNumber">Account Number :</label>
+                               <input type="text" class="form-control" [(ngModel)]="accountNumber"  style="background-color:#ffe6e6;">
+								</div>
+								<div class="col-md-4">
+								       <label for="amount">Amount :</label>
+                                       <input type="number" class="form-control" [(ngModel)]="amount" style="background-color:#ffe6e6;">
+								</div>
+								<div class="col-md-4">                                   
+								      <button type="button" class="btn btn-success" (click)="withdrawTransaction(accountNumber,amount)">Validate</button>
+								</div>
+						</div>
+                    </div>
+				</div>	
+            </div>
+	    </div>
+   </div>
+</div>
+    

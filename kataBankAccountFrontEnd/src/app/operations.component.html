@@ -1,0 +1,43 @@
+<div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Operations</h4>
+                            </div>
+                             <div class="col-md-4">
+                               <label for="accountNumber">Account Number :</label>
+                               <input type="text" [(ngModel)]="accountNumber" class="form-control" id="accountNumber" style="background-color:#ffe6e6;">
+                            </div>
+                            <div class="col-md-4" >                                   
+                                <button type="button" class="btn btn-success" (click)="getAllOperation(accountNumber)">Search</button>
+                            </div>
+
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <th>Operation</th>
+                                    	<th>Date</th>
+                                    	<th>Amount</th>
+                                    	<th>Balance</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let operation of operations">
+                                        	<td>{{operation.operation}}</td>
+                                            <td>{{operation.dateOperation}}</td>
+                                            <td>{{operation.amout}}</td>
+                                            <td>{{operation.balance}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="col-md-4" >                                   
+                                <button type="button" class="btn btn-success" (click)="printAllOperation(accountNumber)">Print</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
